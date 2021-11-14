@@ -1,0 +1,306 @@
+
+
+/* GENERAL */
+
+
+:root{
+    /* primaire */
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+
+
+    /* neutre */
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+
+
+    --Bai-Jamjuree:'Bai Jamjuree', sans-serif;
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue );
+}
+
+a:hover{
+    color: var(--Strong-Cyan);
+    
+}
+body{
+    box-sizing: border-box;
+    font-family: var(--Bai-Jamjuree);
+    font-size: 18px;
+}
+
+
+.btn{
+    font-family: var(--Bai-Jamjuree);
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin: 40px 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 60%;
+    transition: 0.4;
+}
+#ios_btn{
+    background-color: var(--Strong-Cyan);
+}
+
+#mac_btn{
+    background-color: var(--Light-Blue);
+}
+
+
+
+
+h1,h2,h3{
+    color: var(--Dark-Grayish-Blue);
+}
+
+p{
+    color: var(--Grayish-Blue);
+    margin: 20px;
+    line-height: 2rem;
+
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    background-color: hsl(0,0%,97%);
+    margin: 0;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+
+/* HEADER */
+
+
+header {
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 300px;
+
+}
+
+
+header img{
+    padding-bottom: 50px;
+
+}
+
+
+/* PRESENTATION -- SNIPPETS */
+
+.presentation, .snippets{
+    text-align: center;
+    margin: 0px 360px;
+
+}
+
+
+/* FEATURS */
+
+
+#illustration_featurs{
+    display: flex;
+    margin: 70px 0px 150px -35px;
+    
+}
+#all_featurs{
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 76px;
+    margin-top: 50px;
+    margin-right: 230px;
+}
+
+
+#all_featurs p{
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+/* ACCES */
+
+#illustration_acces{
+    margin: 100px 0px 100px 0px;
+    text-align: center;
+}
+
+
+
+/* ITEMS */
+
+#all_items{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top:100px;
+    
+}
+
+#all_items p{
+    margin-left:0px;
+
+}
+
+.items_center{
+    width: 400px;
+}
+
+
+/* PUB */
+
+
+#pub{
+    width: 1200px;
+    justify-content: space-between;
+    display: flex;
+    margin: 150px 100px 150px 100px;
+}
+
+
+/*FOOTER*/
+
+footer{
+    height: auto;
+    background-color: hsl(0,0%,97%);
+    display: flex;
+    
+    justify-content: space-around;
+    padding-top: 50px;
+    margin-top: 150px;
+}
+
+
+footer li{
+    margin-bottom: 20px;
+}
+
+#reseaux a{
+    padding-right: 10px;
+}
+
+
+
+
+@media screen and (max-width:1339px){
+    
+   .presentation{
+       margin: auto 20vw auto 20vw;
+   }
+
+   #all_featurs{
+       margin: auto 20px auto 20px;
+   }
+   #pub{
+    width: auto;
+    margin: 150px 20px 150px 20px;
+}
+}
+
+
+@media screen and (max-width:1024px){
+
+    #illustration_featurs{
+        flex-direction: column;
+    }
+
+    .featurs{
+        margin: 5vh 20vw 0vh 20vw;
+        text-align: center;
+    }
+    
+
+}
+
+
+@media screen and (max-width:768px){
+
+    #illustration_acces img{
+        width: 750px;
+    }
+
+    #pub{
+        flex-direction: column;
+        width: 200px;
+        margin: 50px auto 50px auto;
+    }
+
+    #pub img{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+
+    header{
+        background-image: url(images/bg-header-mobile.png);
+    } 
+
+    #illustration_acces img, .ilustration img{
+        width: 300px;
+    }
+
+    #all_items{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .items_center{
+        width: auto;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    footer img{
+        margin-bottom: 20px;
+    }
+
+    .btn{
+        margin: 10px auto 10px auto;
+    }
+
+
+
+}
+
+
+
+
+
+
